@@ -1,0 +1,55 @@
+/* Container for all cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual game card */
+.game-card {
+    background: #1a1a1a;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Game image */
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Title */
+.game-card h3 {
+    font-size: 1.3rem;
+    margin: 10px;
+    font-weight: 600;
+}
+
+/* Rating & Recommendation */
+.game-card p {
+    margin: 5px 10px 10px;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.game-review {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.game-recommendation {
+    font-style: italic;
+    color: #aaa;
+}
